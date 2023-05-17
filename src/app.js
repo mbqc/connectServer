@@ -17,7 +17,7 @@ app.use((req, res, next) => {
 
 
 app.get('/test', (req, res) => {
-  res.send('is it here  -  fdsfsdfsdf  sdfsdfsdf - ')
+  res.send('is it here  -  yo - ')
 })
 
 app.get('/more', (req, res) => {
