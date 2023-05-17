@@ -7,8 +7,9 @@
     "dev": "quasar dev",
     "lint": "eslint --ext .js,.vue ./",
     "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
-    "test": "echo \"No test specified\" && exit 0"
-  },
+    "test": "echo \"No test specified\" && exit 0",
+    "start": "node app.js"
+  }, 
   "dependencies": {
     "@quasar/extras": "^1.15.4",
     "@sendgrid/mail": "^7.7.0",
