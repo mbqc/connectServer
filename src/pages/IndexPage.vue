@@ -75,7 +75,7 @@ const max = 5;
 function test_backEnd() {
   // 
 
-  // axios.get('https://connproj-michael1.b4a.run/more')
+  //  axios.get('https://connproj-michael1.b4a.run/query')
   axios.get('http://localhost:3000/query')
   .then(function (response) {
     // handle success
