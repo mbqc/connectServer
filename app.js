@@ -17,16 +17,7 @@ app.use((req, res, next) => {
 });
  
 
-var dbConfig = {
-  user:  'test',
-  password: '1234',
-  server: '69.70.232.234',
-  database: 'dbZytco_II', // 'ZYT_DEV_II' //'dbBBBB' //  'back_II'   test  //  
-  options: {
-    trustedConnection: true,
-    trustServerCertificate: true
-  },
-}; 
+ 
 
 // **************** EXECUTE QUERY !!!! ****************
 var  executeQuery = function(res, query){   
