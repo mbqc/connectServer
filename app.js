@@ -46,6 +46,28 @@ var query =  decodeURIComponent("select * from TempTable");
 executeQuery (res, query);
 });  
 
+app.get('/email', (req, res) => {
+
+  const postmark = require("postmark");
+
+// Send an email:
+const client = new postmark.ServerClient("172568b1-40bf-4150-9b01-c689127dbc44");
+ 
+client.sendEmail({ 
+  "From": "michael@busmob.com", 
+  "To": "michael@busmob.com",
+  "Subject": "Howdy from new emailer",
+  "HtmlBody": "<strong>Hello</strong> dear Postmark user. Hope all is well",
+  "TextBody": "Hello from Postmark -- text action!",
+  "MessageStream": "outbound"
+});
+
+
+})
+
+
+
+
 
 
 app.get('/test', (req, res) => {
@@ -57,7 +79,7 @@ app.get('/more', (req, res) => {
 })
 
 app.get('/plus', (req, res) => {
-  res.send('should refresh ... and more refreshing !  ')
+  res.send('this is the plus ....  !  ')
 })
 
  var server = app.listen(process.env.PORT || port, function () {
